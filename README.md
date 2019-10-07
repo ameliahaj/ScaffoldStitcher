@@ -1,10 +1,10 @@
-#Introduction
+# Introduction 
 ScaffoldStitcher is a Python tool that concatenates unplaced scaffolds into chromosome-sized super-scaffolds for use with GATK Haplotype Caller. Often, when a reference FASTA file contains too many unplaced scaffolds, Haplotype Caller is unable to handle the number of sequences. Stitching scaffolds together, separated by sufficiently long strings of Ns so that reads don't map across multiple scaffolds, circumvents this known issue.
 
-#Installation
+# Installation
 ScaffoldStitcher is a Python script that requires Python 3 to run. The latest version of Python can be downloaded at https://www.python.org/downloads/. No other software is required to use ScaffoldStitcher.
 
-#Inputs and outputs
+# Inputs and outputs
 ScaffoldStitcher takes an input FASTA file with all canonical chromosomes listed first, followed by scaffold sequences, and outputs a FASTA file in which the scaffold sequences have been concatenated together, separated by a specified number of Ns so that no reads map across more than one scaffold.
 
 **Required inputs**
